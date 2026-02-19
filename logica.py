@@ -25,5 +25,24 @@ def ver_gastos(gastos):
         print("Fecha ->", gasto["fecha"])
         print("-" * 20)
         
+def ver_por_categoria(gastos):
+    respuesta = input("Qué categoría quieres ver?: ").lower().strip()
+    encontrado = False
+    
+    for gasto in gastos:
+        encontrado = True
+        if gastos["categoria"] == respuesta:
+            print("Precio -> $", gasto["precio"])
+            print("Categoría ->", gasto["categoria"])
+            print("Descripción ->", gasto["descripcion"])
+            print("Fecha ->", gasto["fecha"])
+            print("-" * 20)
+            
+        if not encontrado:
+            print("Categoría no encontrada")
+
+
+        
+        
     
         
