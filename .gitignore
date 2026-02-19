@@ -1,1 +1,4 @@
 .env
+config.json
+gastos.json
+__pycache__
