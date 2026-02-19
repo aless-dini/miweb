@@ -18,3 +18,11 @@ def agregar_gasto(gastos):
     print("Gasto agregado correctamente")
     
 def ver_gastos():
+    for gasto in gastos:
+        print("Precio -> $", gasto["precio"])
+        print("Categoría ->", gasto["categoria"])
+        print("Descripción ->", gasto["descripcion"])
+        print("Fecha ->", gasto["fecha"])
+        print("-" * 20)
+    
+        
