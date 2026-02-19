@@ -16,3 +16,5 @@ def agregar_gasto(gastos):
     gastos.apppend(gasto)
     guardar_info_gastos(gastos)
     print("Gasto agregado correctamente")
+    
+def ver_gastos():
